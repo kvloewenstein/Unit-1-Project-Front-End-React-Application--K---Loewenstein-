@@ -1,23 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/header'
+import Home from './components/pages/HomePage'
+import About from './components/pages/AboutPage'
+import SkinForm from './components/pages/SkinTypeForm'
+import Footer from './components/Footer'
 import './index.css'
-import Home from './components/HomePage'
-import About from './components/AboutPage'
-import SkinForm from './components/SkinTypeForm'
-
 
 function App() {
-
   return (
     <Router>
-      <Header/>
-      
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/form" element={<SkinForm/>}/>
-      </Routes>
+      <Header />
+        <div className="main-background">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/form" element={<SkinForm />} />
+          </Routes>
+        <SkinForm />
+        </div>
+      <Footer />
     </Router>
   );
 }
-export default App
+
+export default App;
