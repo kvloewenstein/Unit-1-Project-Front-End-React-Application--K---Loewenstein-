@@ -6,28 +6,32 @@
     justify-content: center;
     align-items: center;
 }
+
 @keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.about-box{
+
+.about-box {
     background-color: rgba(255, 239, 232, 0.8);
     padding: 2rem;
     max-width: 800px;
     border: 8px solid rgba(109, 77, 59, 0.8);
-    font-family:"gabriola", sans-serif;
+    font-family: "gabriola", sans-serif;
     font-size: 2.5rem;
     color: #5f493a;
     transition: transform 0.3s ease;
     animation: fadeSlideUp 1s ease forwards;
-    
+
 }
+
 .about-box h1 {
     font-size: 90px;
     font-family: "gabriola", sans-serif;

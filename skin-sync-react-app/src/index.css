@@ -1,100 +1,111 @@
-body,html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .main-background {
-    background-image: url('./assets/MainBackground.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    min-height: 100vh;
-    padding: 2rem;
+  background-image: url('./assets/MainBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 100vh;
+  padding: 2rem;
 }
+
 header.header {
-    font-family: "mina", serif;
-    font-size: 25px;
-    text-align: center;
-    background-image: url('./assets/header-background.png');
-    background-size: cover;
-    background-position: center;
-    padding: 30px 0 80px 0;
-    padding-bottom: 0 ;
-    margin-bottom: 0;
-    line-height: 1;
-    min-height: 100px;
-    margin: 0;
-    position: relative;
+  font-family: "mina", serif;
+  font-size: 25px;
+  text-align: center;
+  background-image: url('./assets/header-background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0 80px 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 1;
+  min-height: 100px;
+  margin: 0;
+  position: relative;
 }
+
 .logo-overlay {
-    background-image: url(./assets/header-pic.png);
-    background-size: 90px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 22%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 128%;
-    opacity: 90% ;
+  background-image: url(./assets/header-pic.png);
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 22%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 128%;
+  opacity: 90%;
 }
+
 header p {
-    font-family: "gabriola", sans-serif;
-    font-style: normal;
-    line-height: .010;
-    padding-top: 0;
-    width: 90%;
-    text-align:unset;
+  font-family: "gabriola", sans-serif;
+  font-style: normal;
+  line-height: .010;
+  padding-top: 0;
+  width: 90%;
+  text-align: unset;
 }
+
 .button-group {
-    width: 100%;
-    margin: 0;
-    background-color: rgba(173, 143, 129, 0.8);
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-    border-top: 2px transparent;
-    border-bottom: 2px transparent;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(173, 143, 129, 0.8);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  border-top: 2px transparent;
+  border-bottom: 2px transparent;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
 }
+
 .button-group button {
-    font-size: 22px;
-    border-radius: 6px;
-    width: 200px;
+  font-size: 22px;
+  border-radius: 6px;
+  width: 200px;
 }
+
 button {
-    background: linear-gradient(5deg, #dfd5cd, #9c7462);
-    color: #fff;
-    border: none;
-    padding: 1px 24px; 
-    font-size: 25px;
-    font-family: "Gabriola", sans-serif;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
-    width: 200px;
+  background: linear-gradient(5deg, #dfd5cd, #9c7462);
+  color: #fff;
+  border: none;
+  padding: 1px 24px;
+  font-size: 25px;
+  font-family: "Gabriola", sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  width: 200px;
 }
+
 button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(5deg, #9c7462, #dfd5cd);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+  background: linear-gradient(5deg, #9c7462, #dfd5cd);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
+
 .footer {
-    width: 100%;
-    margin: 0;
-    background-color: rgba(173, 143, 129, 0.8);
-    display: flex;
-    justify-content: center;
-    font-family: "Gabriola", sans-serif;
-    font-size: larger;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(173, 143, 129, 0.8);
+  display: flex;
+  justify-content: center;
+  font-family: "Gabriola", sans-serif;
+  font-size: larger;
 }
+
 /* Responsiveness on different devices  */
 @media (max-width: 768px) {
   header.header {
@@ -122,6 +133,7 @@ button:hover {
     top: 25%;
   }
 }
+
 @media (max-width: 480px) {
   header.header {
     font-size: 18px;
