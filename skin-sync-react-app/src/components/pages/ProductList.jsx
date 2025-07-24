@@ -131,23 +131,83 @@ const PRODUCT_DATA = {
         },
     }
 };
+
 function ProductList({ skinType, skinConditions }) {
     const [recommendations, setRecommendations] = useState({
         cleanser: [],
         moisturizer: [],
         topicals: [],
-
-        // Adding useEffect & more JS here
-
-
-
-
-
     });
-    return (
-        <>
+    // THis will run whenever Skin type or Skin conditions change
+    useEffect(() => {
+        if (!skinType || !skinConditions.length === 0) {
+            setRecommendations({ cleanser: [], moisturizer: [], topicals: [] });
+            return;
+        }
 
-        </>
-    )
+        const typeData = PRODUCT_DATA[skinType];
+        if (!typeData) return;
+
+        const result = {
+            cleanser: [],
+            moisturizer: [],
+            topicals: [],
+        };
+
+        // Looping through each condition the user selected
+        skinConditions.forEach((condition) => {
+            const conditionData = typeData[condition];
+            if (conditionData) {
+                result.cleanser.push(...conditionData.cleanser);
+                result.moisturizer.push(...conditionData.moisturizer);
+                result.topicals.push(...conditionData.topicals);
+            }
+        });
+
+        // Removing any duplicates
+        result.cleanser = [...new Set(result.cleanser)];
+        result.moisturizer = [...new Set(result.moisturizer)];
+        result.topicals = [...new Set(result.topicals)];
+
+        setRecommendations(result);
+    }, [skinType, skinConditions]);
+
+    return (
+        <section className="results-container">
+            <div className="product-column">
+                <h3 className="column-title">Cleanser</h3>
+                <ul>
+                    {recommendations.cleanser.length > 0 ? (
+                        recommendations.cleanser.map((item, index) => <li key={index}>{item}</li>)
+                    ) : (
+                        <li>No cleanser suggestions</li>
+                    )}
+                </ul>
+            </div>
+
+            <div className="product-column">
+                <h3 className="column-title">Moisturizer</h3>
+                <ul>
+                    {recommendations.moisturizer.length > 0 ? (
+                        recommendations.moisturizer.map((item, index) => <li key={index}>{item}</li>)
+                    ) : (
+                        <li>No moisturizer suggestions</li>
+                    )}
+                </ul>
+            </div>
+
+            <div className="product-column">
+                <h3 className="column-title">Topicals</h3>
+                <ul>
+                    {recommendations.topicals.length > 0 ? (
+                        recommendations.topicals.map((item, index) => <li key={index}>{item}</li>)
+                    ) : (
+                        <li>No topicals suggested</li>
+                    )}
+                </ul>
+            </div>
+        </section>
+    );
 }
+
 export default ProductList;

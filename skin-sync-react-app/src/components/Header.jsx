@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-     return (
+    return (
         <header className="header">
             <div className="logo-overlay"></div>
-            <h1>Skin-Sync</h1> 
+            <h1>Skin-Sync</h1>
             <p>Matching You to Your Perfect Skin Care</p>
 
-            <div className="button-group">
-            <Link to="/"><button>Home</button></Link>
-            <Link to="/about"><button>About</button></Link>
-            <Link to="/form"><button>Skin Form</button></Link>
-            </div>
+            <nav className="button-group">
+                <Link to="/"><button>Home</button></Link>
+                <Link to="/about"><button>About</button></Link>
+                <Link to="/form"><button>Skin Form</button></Link>
+            </nav>
         </header>
-     );
+    );
 }
 export default Header;

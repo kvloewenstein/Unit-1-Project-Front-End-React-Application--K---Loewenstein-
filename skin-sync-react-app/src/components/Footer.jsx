@@ -1,5 +1,5 @@
 function Footer() {
-    return(
+    return (
         <footer className="footer">
             <p>&copy; {new Date().getFullYear()} Skin-Sync. All rights reserved.</p>
 

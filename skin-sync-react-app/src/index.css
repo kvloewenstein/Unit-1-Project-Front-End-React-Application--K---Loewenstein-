@@ -18,6 +18,7 @@ html {
 header.header {
   font-family: "mina", serif;
   font-size: 25px;
+  color: #755749;
   text-align: center;
   background-image: url('./assets/header-background.png');
   background-size: cover;
@@ -37,7 +38,7 @@ header.header {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 22%;
+  top: 19%;
   left: 49%;
   transform: translate(-50%, -50%);
   width: 120px;
@@ -109,8 +110,8 @@ button:hover {
 /* Responsiveness on different devices  */
 @media (max-width: 768px) {
   header.header {
-    font-size: 20px;
-    padding: 20px 0 60px 0;
+    font-size: 1.2rem;
+    padding: 15px 0 0;
     min-height: 80px;
   }
 
@@ -123,40 +124,14 @@ button:hover {
   .button-group button,
   button {
     width: 150px;
-    font-size: 20px;
-    padding: 8px 16px;
+    font-size: 16px;
+    padding: 2px 16px;
   }
 
   .logo-overlay {
     width: 90px;
     height: 100%;
-    top: 25%;
-  }
-}
-
-@media (max-width: 480px) {
-  header.header {
-    font-size: 18px;
-    padding: 15px 0 50px 0;
-    min-height: 70px;
-  }
-
-  .button-group {
-    flex-direction: column;
-    gap: 12px;
-    padding: 6px;
-  }
-
-  .button-group button,
-  button {
-    width: 120px;
-    font-size: 18px;
-    padding: 6px 12px;
-  }
-
-  .logo-overlay {
-    width: 80px;
-    height: 90%;
-    top: 28%;
+    top: 15%;
+    background-size: 60px;
   }
 }

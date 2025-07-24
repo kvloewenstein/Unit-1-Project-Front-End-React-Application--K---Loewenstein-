@@ -3,16 +3,22 @@ import './HomePage.css'
 function Home() {
     return (
         <main className="home-wrap">
-            <div className="home-box">
+            <section className="home-box">
                 <h1>Welcome to Skin-Sync!</h1>
-                <p>Find skincare products<br />
+                <p>
+                    Find skincare products<br />
                     matched to your skin type &<br />
                     concerns!
                 </p>
-                <div className="shortcut-button">
+
+                <nav className="shortcut-button">
                     <Link to="/form"><button>Get Started!</button></Link>
+                </nav>
+
+                <div className="image">
+                    <img src="./src/assets/SkinCarePhoto.png" alt="Hands holding skincare products" />
                 </div>
-            </div>
+            </section>
         </main>
     );
 }
