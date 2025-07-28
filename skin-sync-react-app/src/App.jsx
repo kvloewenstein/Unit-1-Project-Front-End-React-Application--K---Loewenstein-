@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/header'
+import Header from './components/Header'
 import Home from './components/pages/HomePage'
 import About from './components/pages/AboutPage'
 import SkinForm from './components/pages/SkinTypeForm'
