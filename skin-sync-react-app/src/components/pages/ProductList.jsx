@@ -107,7 +107,7 @@ const PRODUCT_DATA = {
         "Acne-Prone": {
             cleanser: ["Neutrogena Ultra Gentle Acne Cleanser"],
             moisturizer: ["CeraVe Facial Moisturizing Lotion"],
-            topicals: "Differin Gel (Gentle Formula)"
+            topicals: ["Differin Gel (Gentle Formula)"]
         },
         Rosacea: {
             cleanser: ["Cetaphil Redness Relieving Cleanser"],
