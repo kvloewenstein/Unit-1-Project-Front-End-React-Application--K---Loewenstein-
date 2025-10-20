@@ -1,18 +1,46 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
-    return (
-        <header className="header">
-            <div className="logo-overlay"></div>
-            <h1>Skin-Sync</h1>
-            <p>Matching You to Your Perfect Skin Care</p>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-            <nav className="button-group">
-                <Link to="/"><button>Home</button></Link>
-                <Link to="/about"><button>About</button></Link>
-                <Link to="/form"><button>Skin Form</button></Link>
-            </nav>
-        </header>
-    );
+  return (
+    <header className="header">
+      {/* Logo + overlay */}
+      <div className="logo-container">
+        <div className="logo-wrapper">
+          <div className="logo-overlay"></div>
+          <div className="logo-text">
+            <div className="logo">Skin Sync</div>
+            <div className="slogan">Matching you to your perfect skin care</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hamburger button */}
+      <div
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <ul>
+          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link to="/skin-quiz" onClick={() => setMenuOpen(false)}>Skin Quiz</Link></li>
+          <li><Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link></li>
+        </ul>
+      </nav>
+
+      
+      <div className="header-line"></div>
+    </header>
+  );
 }
+
 export default Header;

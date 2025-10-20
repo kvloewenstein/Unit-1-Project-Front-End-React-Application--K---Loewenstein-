@@ -3,23 +3,33 @@ import './HomePage.css'
 function Home() {
     return (
         <main className="home-wrap">
-            <section className="home-box">
-                <h1>Welcome to Skin-Sync!</h1>
-                <p>
-                    Find skincare products<br />
-                    matched to your skin type &<br />
-                    concerns!
-                </p>
-
-                <nav className="shortcut-button">
-                    <Link to="/form"><button>Get Started!</button></Link>
-                </nav>
-
-                <div className="image">
-                    <img src="./src/assets/SkinCarePhoto.png" alt="Hands holding skincare products" />
+            <section>
+                <div className="bannerImage">
+                    <img src="./src/assets/home-background.png" alt="Skin Care asthetic background" />
                 </div>
+                <div className="image">
+                    <img src="./src/assets/skin_care_image.png" alt="Person pouring a skin product into hand" />
+                </div>
+
+            </section>
+            <section>
+                <div className="explaination">
+                    <h2>How it Works</h2><br></br>
+                    <li>Step 1: Take the Quiz – Quick questions about your skin.</li><br></br>
+                    <li>Step 2: Get Recommendations – Personalized products and routine.</li><br></br>
+                    <li>Step 3: Glow with Confidence – Follow your routine and see results.</li><br></br>
+                </div>
+                <nav className="shortcut-button">
+                    <Link to="/skin-quiz"><button><b>Get Started!</b></button></Link>
+                </nav>
+                <div className="face-wash">
+                    <img src="./src/assets/washing_face.png" alt="Female washing her face" />
+                </div>
+                <div className="logo-circle">Finding Skin Care Shouldn't Be This Hard... Let Skin-Sync do the hard work for you.</div>
+
             </section>
         </main>
+
     );
 }
 

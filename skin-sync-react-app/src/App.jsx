@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/form" element={<SkinForm />} />
+          <Route path="/skin-quiz" element={<SkinForm />} />
         </Routes>
       </div>
       <Footer />

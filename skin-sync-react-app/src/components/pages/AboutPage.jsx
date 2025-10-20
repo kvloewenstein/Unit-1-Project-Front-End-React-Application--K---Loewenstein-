@@ -3,33 +3,27 @@ function About() {
     return (
         <main className="about-wrap">
             <section className="about-box">
-                <h1>About Skin-Sync</h1>
-
+                <h1>About Us</h1>
                 <p>
-                    With Skin-Sync, I believe that everyone deserves to feel confident
-                    and comfortable in their own skin. My mission is to help people discover
-                    the perfect skincare products and routines tailored to their unique skin
-                    types and conditions.
+                    At Skin-Sync, we believe skincare should be simple, personalized, and stress-free.
+                    Our goal is to help you understand your unique skin type and match you with products
+                    that truly fit your needs. Whether you’re dealing with dryness, acne, or
+                    just looking to maintain healthy skin, we make it easy to find what works for you.
                 </p>
-
+                <div className='about-img'>
+                    <img src='./src/assets/About_me.png' alt='female with moisturizer on face' />
+                </div>
+            </section>
+            <section className='our-mission'>
+                <h1>Our Mission</h1>
                 <p>
-                    As someone who personally struggles with Seborrheic Dermatitis and Rosacea,
-                    I know how frustrating and overwhelming it can be to find skincare that truly
-                    works, especially when juggling multiple skin concerns. After years of searching
-                    for solutions, I realized there needed to be a better, more personalized way
-                    to help others in the same situation.
+                    Our mission is to empower everyone to feel confident in their own skin. We do this by
+                    combining knowledge, technology, and care to deliver personalized skincare recommendations
+                    that make self-care easy, effective, and accessible for all.
                 </p>
-
-                <p>
-                    That’s why I created Skin-Sync. It’s a space designed to support anyone and everyone
-                    in finding skincare that works for them. Whether you’re dealing with acne, sensitivity,
-                    dryness, or chronic skin conditions, our goal is to simplify the process and help you
-                    find products that actually make sense for your skin.
-                </p>
-
-                <p>
-                    Your skin is one of a kind. Your skincare should be too.
-                </p>
+                <div className='mission-img'>
+                    <img src='./src/assets/our_mission.png' alt='skin care and fruit' />
+                </div>
             </section>
         </main>
     );
