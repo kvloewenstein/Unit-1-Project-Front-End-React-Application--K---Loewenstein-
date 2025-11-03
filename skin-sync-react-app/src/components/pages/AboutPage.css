@@ -32,8 +32,11 @@
 }
 
 .about-img {
-  margin-left: 65rem;
+  position: relative;
+  display: flex;
   margin-top: -25rem;
+  justify-content: right;
+  right: 6rem;
 }
 
 .about-img img {
