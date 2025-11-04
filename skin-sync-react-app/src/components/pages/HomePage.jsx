@@ -5,10 +5,10 @@ function Home() {
         <main className="home-wrap">
             <section>
                 <div className="bannerImage">
-                    <img src="./public/images/home-background.png" alt="Skin Care asthetic background" />
+                    <img src="/images/home-background.png" alt="Skin Care asthetic background" />
                 </div>
                 <div className="image">
-                    <img src="./public/images/skin_care_image.png" alt="Person pouring a skin product into hand" />
+                    <img src="/images/skin_care_image.png" alt="Person pouring a skin product into hand" />
                 </div>
 
             </section>
@@ -23,7 +23,7 @@ function Home() {
                     <Link to="/skin-quiz"><button><b>Get Started!</b></button></Link>
                 </nav>
                 <div className="face-wash">
-                    <img src="./public/images/washing_face.png" alt="Female washing her face" />
+                    <img src="/images/washing_face.png" alt="Female washing her face" />
                 </div>
                 <div className="logo-circle">Finding Skin Care Shouldn't Be This Hard... Let Skin-Sync do the hard work for you.</div>
 

@@ -1,4 +1,5 @@
 import './AboutPage.css';
+
 function About() {
     return (
         <main className="about-wrap">
@@ -11,9 +12,11 @@ function About() {
                     just looking to maintain healthy skin, we make it easy to find what works for you.
                 </p>
                 <div className='about-img'>
-                    <img src='./public/images/About_me.png' alt='female with moisturizer on face' />
+                    <img 
+                        src='/images/About_me.png' alt='female with moisturizer on face' />
                 </div>
             </section>
+
             <section className='our-mission'>
                 <h1>Our Mission</h1>
                 <p>
@@ -22,7 +25,8 @@ function About() {
                     that make self-care easy, effective, and accessible for all.
                 </p>
                 <div className='mission-img'>
-                    <img src='./public/images/our_mission.png' alt='skin care and fruit' />
+                    <img 
+                        src='/images/our_mission.png' alt='skin care and fruit' />
                 </div>
             </section>
         </main>
