@@ -5,7 +5,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../skin-sync-springboot-app/src/main/resources/static',
+    outDir: 'dist',  
     emptyOutDir: true, 
   },
   resolve: {
