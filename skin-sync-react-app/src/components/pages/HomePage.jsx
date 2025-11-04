@@ -1,18 +1,15 @@
 import { Link } from "react-router-dom";
 import './HomePage.css'
-import HomeBg from '../assets/home-background.png';
-import SkinCareImg from '../assets/skin_care_image.png';
-import WashFace from '../assets/washing_face.png';
 
 function Home() {
     return (
         <main className="home-wrap">
             <section>
                 <div className="bannerImage">
-                    <img src={HomeBg} alt="Skin Care aesthetic background" />
+                   <img src="/images/home-background.png" alt="Skin Care aesthetic background" />
                 </div>
                 <div className="image">
-                    <img src={SkinCareImg} alt="Person pouring a skin product into hand" />
+                    <img src="/images/skin_care_image.png" alt="Person pouring a skin product into hand" />
                 </div>
             </section>
 
@@ -29,7 +26,7 @@ function Home() {
                 </nav>
 
                 <div className="face-wash">
-                    <img src={WashFace} alt="Female washing her face" />
+                    <img src="/images/washing_face.png" alt="Female washing her face" />
                 </div>
 
                 <div className="logo-circle">
