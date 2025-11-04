@@ -64,7 +64,7 @@ header.header::after {
 
 /* ====== LOGO OVERLAY IMAGE ====== */
 .logo-overlay {
-  background-image: url('./assets/header-pic.png');
+  background-image: url('/images/header-pic.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
