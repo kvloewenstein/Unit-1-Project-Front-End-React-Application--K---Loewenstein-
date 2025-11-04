@@ -1,4 +1,6 @@
 import './AboutPage.css';
+import AboutMe from '../assets/About_me.png';
+import OurMission from '../assets/our_mission.png';
 
 function About() {
     return (
@@ -12,7 +14,7 @@ function About() {
                     just looking to maintain healthy skin, we make it easy to find what works for you.
                 </p>
                 <div className='about-img'>
-                    <img src='/images/About_me.png' alt='female with moisturizer on face' />
+                    <img src={AboutMe} alt='female with moisturizer on face' />
                 </div>
             </section>
 
@@ -24,7 +26,7 @@ function About() {
                     that make self-care easy, effective, and accessible for all.
                 </p>
                 <div className='mission-img'>
-                    <img src='/images/our_mission.png' alt='skin care and fruit' />
+                    <img src={OurMission} alt='skin care and fruit' />
                 </div>
             </section>
         </main>
